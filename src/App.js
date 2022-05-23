@@ -1,14 +1,24 @@
-import React from 'react'
-import Footer from './components/Footer/Footer'
-import Navbar from './components/Navbar/Navbar'
+import React from "react";
+import Banner from "./components/Banner/Banner";
+import Bestselling from "./components/BestSelling/Bestselling";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Recommended from "./components/Recommended/Recommended";
+import Sponsord from "./components/Sponsord/Sponsord";
+import Valentine from "./components/ValentineDay/Valentine";
 
 const App = () => {
   return (
     <div>
-      <Navbar/>
-      <Footer/>
+      <Navbar />
+      <Banner />
+      <Sponsord />
+      <Valentine />
+      <Recommended/>
+      {/* <Bestselling/> */}
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
