@@ -63,10 +63,9 @@ nav {
       cursor: pointer;
       font-weight: bold;
       @media screen and (min-width: 768px) {
-        margin-left: -100px;
+        margin-left: -86px;
         background-color: red;
         padding-left: 8px;
-        padding-top: 7px;
         height: 2.5rem;
         width: 2.5rem;
         color: #fff;
@@ -75,7 +74,7 @@ nav {
     }
     .icon-cart {
       margin-left: -3rem;
-      margin-right: 5rem;
+      margin-right: 4rem;
       cursor: pointer;
       display: flex;
       justify-content: center;
@@ -92,7 +91,7 @@ nav {
         font-size: 11px;
         color: rgb(84, 82, 82);
         cursor: pointer;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         &:hover {
           color: red;
         }
@@ -167,7 +166,7 @@ nav {
         font-size: 11px;
         color: rgb(84, 82, 82);
         cursor: pointer;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         &:hover {
           color: red;
         }
@@ -202,7 +201,7 @@ nav {
         font-size: 11px;
         color: rgb(84, 82, 82);
         cursor: pointer;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         &:hover {
           color: red;
         }
@@ -235,22 +234,29 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  // margin-top: 1rem;
   .navigation_bottom_bar_items {
     list-style: none;
-
-    a {
-      text-decoration: none;
-      font-size: 0.7rem;
-      font-family: var(--primary-font);
-      color: #fff;
+    .list_items {
       padding: 5px;
       margin: 10px;
       background-color: var(--primary-color);
       border-radius: 10px;
+
+      font-size: 0.7rem;
+      font-family: var(--primary-font);
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
       font-weight: bold;
+      &:hover {
+        // border-bottom: 1.5px solid #000;
+        text-decoration: #000 underline;
+      }
     }
     span {
+      z-index: 1;
       color: var(--primary-border-color);
     }
   }

@@ -1,0 +1,57 @@
+.books_container {
+  position: relative;
+  width: 100%;
+  height: 33rem;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  margin-top: -10px;
+  z-index: 2;
+  padding: 20px;
+  border-bottom: 2px solid rgb(188, 188, 188);
+  .header {
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+    p {
+      margin-bottom: 2px;
+    }
+    .redBorder {
+      position: relative;
+      top: 3.5px;
+      width: 10rem;
+      border-bottom: 3px solid red;
+      z-index: 2;
+    }
+  }
+  .books {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .books_card {
+      cursor: pointer;
+      width: 30rem;
+      object-fit: contain;
+      margin: 10px;
+      img {
+        width: 100%;
+        z-index: -10;
+        height: auto;
+      }
+      .books_details {
+        margin-top: -60px;
+        background-color: #fff;
+        box-shadow: 3px 17px 17px 1px rgba(0, 0, 0, 0.16);
+        border-radius: 0 0 12px 12px;
+        transition: all 0.2s ease-in-out;
+        padding: 10px;
+        z-index: 10;
+        width: 100%;
+        height: 10rem;
+        p {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

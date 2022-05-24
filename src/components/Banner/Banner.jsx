@@ -1,8 +1,13 @@
 import React from "react";
 import "./Banner.scss";
 import { AiOutlineRight } from "react-icons/ai";
-
+import { images } from "../../constants/index";
+// import { Carousel } from "react-bootstrap";
+import Carousel from 'react-bootstrap/Carousel'
 const Banner = () => {
+  
+
+ 
   return (
     <>
       <div className="banner_container">
@@ -69,9 +74,46 @@ const Banner = () => {
           ))}
         </div>
         <div className="banner_section">
-          <div className="carousal_banner">
-          
-          </div>
+          <Carousel>
+            <Carousel.Item interval={1000}>
+              <img
+                className="d-block w-100"
+                src={images.bnr1}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item interval={500}>
+              <img
+                className="d-block w-100"
+                src={images.bnr2}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={images.bnr3}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+
+          {/* <div className="carousal_banner">
+            <div className="left_arrow" onClick={prevSlide}>
+              <AiOutlineLeft />
+            </div>
+            <div className="right_arrow" onClick={nextSlide}>
+              <AiOutlineRight />
+            </div>
+            {slides.map((item, index) => (
+              <div
+                className={index === current ? "slide active" : "slide"}
+                key={index}
+              >
+                {index === current && <img src={item} alt="" className="image" />}
+              </div>
+            ))}
+          </div> */}
           <div className="banner_section_bottom">
             <img
               src="https://bazaarfly.com/public/uploads/categories/banner/FUrJqQncSY32lX6kaxnupOKiIPRUnxwsCHabppWU.png"

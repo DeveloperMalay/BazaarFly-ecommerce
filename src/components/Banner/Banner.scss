@@ -57,8 +57,100 @@
     flex-direction: column;
     height: 40rem;
     background-color: #fffce5;
+    overflow: hidden;
+
+    .carousel-indicators{
+      display: none;
+    }
+    .carousel-control-next-icon {
+      position: absolute;
+      top: 45%;
+      right: -12px;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 100%;
+      background-color: rgb(214, 214, 214);
+      color: #fff;
+      padding: 15px 30px 0 0;
+      opacity: 0.2;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .carousel-control-prev-icon {
+      position: absolute;
+      top: 45%;
+      left: -12px;
+      z-index: 10;
+      cursor: pointer;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 100%;
+      background-color: rgb(232, 232, 232);
+      color: #fff;
+      padding: 15px 0 0 30px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    // .carousal_banner {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   position: relative;
+
+    //   .left_arrow {
+    //     position: absolute;
+    //     top: 45%;
+    //     left: -30px;
+    //     font-size: 2rem;
+    //     z-index: 10;
+    //     cursor: pointer;
+    //     user-select: none;
+    //     height: 4rem;
+    //     width: 4rem;
+    //     border-radius: 100%;
+    //     background-color: rgb(214, 214, 214);
+    //     color: rgb(110, 30, 30);
+    //     padding: 15px 0 0 30px;
+    //     opacity: 0.2;
+    //     &:hover {
+    //       opacity: 0.8;
+    //     }
+    //   }
+    //   .right_arrow {
+    //     position: absolute;
+    //     top: 45%;
+    //     right: -30px;
+    //     font-size: 2rem;
+    //     z-index: 10;
+    //     cursor: pointer;
+    //     user-select: none;
+    //     height: 4rem;
+    //     width: 4rem;
+    //     border-radius: 100%;
+    //     background-color: rgb(214, 214, 214);
+    //     color: #fff;
+    //     padding: 15px 30px 0 0;
+    //     opacity: 0.2;
+    //     &:hover {
+    //       opacity: 0.8;
+    //     }
+    //   }
+
+    //   .slide.active {
+    //     transition: all 1s ease-in-out;
+    //     img {
+    //       width: 62.5rem;
+    //       cursor: pointer;
+    //     }
+    //   }
+    // }
     .banner_section_bottom {
-      margin-top: 29rem;
+      margin-top: 8rem;
       img {
         width: 8rem;
         margin-left: 8px;
@@ -67,7 +159,7 @@
 
         &:hover {
           transition: transform 1s;
-          transform: skewX(-20px);
+          transform: scale(1, 1.2);
         }
       }
     }

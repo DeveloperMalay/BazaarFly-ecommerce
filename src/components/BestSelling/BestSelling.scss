@@ -1,8 +1,52 @@
 .bestSelling_container {
-  background: #ffb263;
+  position: relative;
+  background-color: #ffb263;
   padding: 54px 15px 54px;
-  height: 40rem;
+  height: 50rem;
   width: 100%;
-  
-  z-index: -5;
+  margin-top: -10rem;
+  border-radius: 10px 10px 0 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .best_products {
+    width: 67rem;
+    height: 30rem;
+    background-color: #fff;
+    margin-top: 5rem;
+    padding: 20px;
+    border-radius: 5px;
+    .header {
+      font-weight: bold;
+      font-size: 20px;
+      border-bottom: 1px solid #000;
+      p {
+        margin-bottom: 2px;
+      }
+      .redBorder {
+        position: relative;
+        top: 3.5px;
+        width: 10rem;
+        border-bottom: 3px solid red;
+        z-index: 2;
+      }
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      .product_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        width: 5rem;
+        .image {
+          width: 2rem;
+        }
+        .product_detail {
+        }
+      }
+    }
+  }
 }

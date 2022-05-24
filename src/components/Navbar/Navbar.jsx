@@ -102,7 +102,10 @@ const Navbar = () => {
             "body spray",
           ].map((item) => (
             <li key={item} className="navigation_bottom_bar_items">
-              <a href="/">{item}</a> <span>|</span>
+              <div className="list_items">
+                <a href="/">{item}</a>
+              </div>
+              <span>|</span>
             </li>
           ))}
         </div>
