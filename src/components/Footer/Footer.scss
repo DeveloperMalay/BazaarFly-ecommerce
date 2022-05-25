@@ -1,0 +1,95 @@
+.footer {
+  background-color: #f7ebeb;
+  padding: 30px;
+  height: 10rem;
+  width: 100%;
+  .btn {
+    margin-left: -15px;
+    span {
+      border: 1px solid #17a2b8;
+      padding: 5px;
+      margin: 10px;
+      color: #17a2b8;
+      &:hover {
+        color: #fff;
+        background-color: #17a2b8;
+      }
+    }
+  }
+  p {
+    font-size: 12px;
+    margin: 5px;
+    color: rgb(142, 141, 141);
+  }
+  a {
+    color: rgb(142, 141, 141);
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 10px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .share_link {
+    position: relative;
+    left: 69rem;
+    top: -6rem;
+    span {
+      cursor: pointer;
+      a {
+        font-size: 1.5rem;
+        background-color: rgb(41, 103, 217);
+        padding: 3px;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+    .link {
+      color: rgb(75, 75, 75);
+      font-size: 15px;
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+  .social_media {
+    margin-top: -6rem;
+    margin-left: 35rem;
+    .facebook {
+      font-size: 3rem;
+      color: #1f79d4;
+      cursor: pointer;
+    }
+    .whatsapp {
+      font-size: 3rem;
+      color: #097927;
+      cursor: pointer;
+    }
+  }
+  .buttons {
+    margin-top: -4rem;
+    margin-left: 60rem;
+    .row1 {
+      display: flex;
+      align-items: center;
+      span {
+        background-color: #ffc107;
+        margin: 10px;
+        padding: 2px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+    }
+    .row2 {
+      display: flex;
+      align-items: center;
+      span {
+        background-color: #ffc107;
+        margin: 10px;
+        padding: 2px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+    }
+  }
+}

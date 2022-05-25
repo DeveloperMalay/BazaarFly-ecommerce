@@ -32,7 +32,9 @@
       object-fit: contain;
       border-radius: 12px;
       margin: 10px;
-
+      &:hover .details {
+        box-shadow: 3px 17px 17px 1px rgba(0, 0, 0, 0.16);
+      }
       img {
         width: 14rem;
         height: 225px;
@@ -43,12 +45,7 @@
         border-radius: 0 0 12px 12px;
         transition: all 0.2s ease-in-out;
         padding: 10px;
-        &:hover {
-          box-shadow: 3px 17px 17px 1px rgba(0, 0, 0, 0.16);
-        }
       }
-
-      
     }
   }
 }

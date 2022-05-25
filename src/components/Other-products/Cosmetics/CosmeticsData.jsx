@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18702/conversions/71QjDzeNPeL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/8372/conversions/983639612068904961-featured_img.jpg",
     name: "Complete General English ",
     save: "You save-114",
     offer: "32% Off",
@@ -12,7 +12,7 @@ export default [
   {
     id: 2,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18602/conversions/61DjWaChSAL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/8362/conversions/IMG_20210610_201615-featured_img.jpg",
     name: "4400 Mcqs: Mechanical ",
     save: "You save-114",
     offer: "32% Off",
@@ -22,7 +22,7 @@ export default [
   {
     id: 3,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18572/conversions/61DyDYXPhSL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/8362/conversions/IMG_20210610_201615-featured_img.jpg",
     name: "The Miracle Morning:The 6",
     save: "You save-114",
     offer: "32% Off",
@@ -32,7 +32,7 @@ export default [
   {
     id: 4,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18560/conversions/61RdRpWvB5L._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/8243/conversions/Sofwash-Whiite-Pearl-Soap-Big-featured_img.jpg",
     name: "The Science of Mind Manag",
     save: "You save-114",
     offer: "32% Off",
@@ -42,7 +42,7 @@ export default [
   {
     id: 5,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18552/conversions/61kxIJbLDZL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/8241/conversions/ProductCategory_05112020100731996394203-featured_img.jpg",
     name: "karma:Why Eerything You",
     save: "You save-114",
     offer: "32% Off",
@@ -52,7 +52,7 @@ export default [
   {
     id: 6,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18536/conversions/51MB4Tc-cFL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/6810/conversions/150-morning-energy-berry-blast-clean-clear-original-imafth35znrvcw9t-featured_img.jpg",
     name: "The Book of Life ",
     save: "You save-114",
     offer: "32% Off",

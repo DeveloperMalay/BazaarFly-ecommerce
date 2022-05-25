@@ -7,7 +7,9 @@ import Books from "./components/Other-products/Books/Books";
 import Recommended from "./components/Recommended/Recommended";
 import Sponsord from "./components/Sponsord/Sponsord";
 import Valentine from "./components/ValentineDay/Valentine";
-
+import Clothes from "./components/Other-products/Clothes/Clothes";
+import Cosmetics from "./components/Other-products/Cosmetics/Cosmetics";
+import Phones from "./components/Other-products/Phones/Phones";
 const App = () => {
   return (
     <div>
@@ -18,6 +20,9 @@ const App = () => {
       <Recommended />
       <Bestselling />
       <Books />
+      <Clothes />
+      <Phones/>
+      <Cosmetics/>
       <Footer />
     </div>
   );

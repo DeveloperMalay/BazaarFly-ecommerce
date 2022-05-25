@@ -59,7 +59,7 @@
     background-color: #fffce5;
     overflow: hidden;
 
-    .carousel-indicators{
+    .carousel-indicators {
       display: none;
     }
     .carousel-control-next-icon {
@@ -158,8 +158,8 @@
         cursor: pointer;
 
         &:hover {
-          transition: transform 1s;
-          transform: scale(1, 1.2);
+          transition: all .2s ease-in-out;
+          transform: scale(1, 1.1);
         }
       }
     }

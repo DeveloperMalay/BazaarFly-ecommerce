@@ -1,4 +1,4 @@
-.clothes_container {
+.cosmetics_container {
   position: relative;
   width: 100%;
   height: 31rem;
@@ -27,7 +27,7 @@
   .other_headers {
     span {
       position: relative;
-      left: 16rem;
+      left: 20rem;
       bottom: 2.3rem;
       background-color: #ffc107;
       font-size: 10px;
@@ -37,7 +37,7 @@
     }
     .right_side_btn {
       position: relative;
-      left: 44.5rem;
+      left: 48.7rem;
       bottom: 1.5rem;
       .red_box {
         background-color: red;
@@ -71,7 +71,7 @@
       cursor: pointer;
       width: 50rem;
       margin-right: 10px;
-      height: 60rem;
+      // height: 40rem;
       transition: all 0.2s linear;
       &:hover .hover_effect {
         opacity: 1;

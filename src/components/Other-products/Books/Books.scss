@@ -1,13 +1,14 @@
 .books_container {
   position: relative;
   width: 100%;
-  height: 33rem;
+  height: 31rem;
   background-color: #fff;
   border-radius: 10px 10px 0 0;
   margin-top: -10px;
   z-index: 2;
   padding: 20px;
-  border-bottom: 2px solid rgb(188, 188, 188);
+  border-bottom: 3px solid rgb(242, 241, 241);
+  margin-bottom: 30px;
   .header {
     font-weight: bold;
     font-size: 20px;
@@ -23,33 +24,143 @@
       z-index: 2;
     }
   }
+  .other_headers {
+    span {
+      position: relative;
+      left: 16rem;
+      bottom: 2.3rem;
+      background-color: #ffc107;
+      font-size: 10px;
+      border-radius: 5px;
+      padding: 3px;
+      cursor: pointer;
+    }
+    .right_side_btn {
+      position: relative;
+      left: 49rem;
+      bottom: 1.5rem;
+      .red_box {
+        background-color: red;
+        color: #fff;
+        border-radius: 5px;
+        padding: 6px;
+        font-size: 15px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .white_box {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 6px 18px 0px rgba(112, 111, 111, 0.16);
+        padding: 6px;
+        font-size: 15px;
+        cursor: pointer;
+        &:hover {
+          background-color: red;
+          color: #fff;
+        }
+      }
+    }
+  }
   .books {
-    margin: 20px;
+    margin-top: -15px;
     display: flex;
     align-items: center;
     justify-content: center;
     .books_card {
       cursor: pointer;
-      width: 30rem;
-      object-fit: contain;
-      margin: 10px;
+      width: 50rem;
+      margin-right: 10px;
+      height: 60rem;
+      transition: all 0.4s ease-in-out;
+      &:hover .hover_effect {
+        opacity: 1;
+      }
+      &:hover{
+        margin-top: -10px;
+      }
       img {
+        position: relative;
         width: 100%;
         z-index: -10;
-        height: auto;
+        height: 18rem;
+      }
+      .hover_effect {
+        opacity: 0;
+        position: relative;
+        top: -60px;
+        margin-top: -2rem;
+        width: 100%;
+        height: 2rem;
+        background-color: #fff;
+        z-index: 10;
+        &:hover {
+          display: block;
+        }
+        .hover_icons {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
       }
       .books_details {
         margin-top: -60px;
         background-color: #fff;
-        box-shadow: 3px 17px 17px 1px rgba(0, 0, 0, 0.16);
+        border-top: 1px solid rgb(200, 197, 197);
+        box-shadow: 3px 12px 14px 0px rgba(112, 111, 111, 0.16);
         border-radius: 0 0 12px 12px;
         transition: all 0.2s ease-in-out;
         padding: 10px;
         z-index: 10;
         width: 100%;
-        height: 10rem;
+        height: 8rem;
         p {
+          display: block;
           background-color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+          overflow: hidden;
+        }
+        .stars {
+          color: rgb(179, 179, 179);
+          margin-top: -10px;
+        }
+        .price {
+          .current_price {
+            font-size: 1rem;
+            color: red;
+            font-weight: bold;
+            margin-right: 10px;
+          }
+          .prev_price {
+            color: rgb(149, 145, 145);
+            p {
+              display: block;
+              width: 3.5rem;
+              border-bottom: 1px solid #8e8d8f;
+              line-height: 0.1em;
+              margin-top: -13px;
+              margin-left: 75px;
+              font-size: 12px;
+            }
+          }
+        }
+        .offer {
+          .save {
+            color: #fff;
+            background-color: #17a2b8;
+            border-radius: 5px;
+            padding: 3px;
+            font-size: 12px;
+            margin-right: 10px;
+          }
+          .off {
+            color: #fff;
+            background-color: red;
+            border-radius: 5px;
+            padding: 3px;
+            font-size: 12px;
+          }
         }
       }
     }

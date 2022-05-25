@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18702/conversions/71QjDzeNPeL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/19236/conversions/GR_1638453104551_IMG_20210904_181959_xlgn400x400-featured_img.jpg",
     name: "Complete General English ",
     save: "You save-114",
     offer: "32% Off",
@@ -12,7 +12,7 @@ export default [
   {
     id: 2,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18602/conversions/61DjWaChSAL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/19230/conversions/GR_1638453110156_012E0223_xlgn400x400-featured_img.jpg",
     name: "4400 Mcqs: Mechanical ",
     save: "You save-114",
     offer: "32% Off",
@@ -22,7 +22,7 @@ export default [
   {
     id: 3,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18572/conversions/61DyDYXPhSL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/19212/conversions/GR_1638953575013_WhatsApp_Image_2021_12_07_at_6_01_18_PM_xlgn400x400-featured_img.jpg",
     name: "The Miracle Morning:The 6",
     save: "You save-114",
     offer: "32% Off",
@@ -32,7 +32,7 @@ export default [
   {
     id: 4,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18560/conversions/61RdRpWvB5L._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/19203/conversions/GR_1623648962518_GRs_2577BROWN_xlgn400x400-featured_img.jpg",
     name: "The Science of Mind Manag",
     save: "You save-114",
     offer: "32% Off",
@@ -42,7 +42,7 @@ export default [
   {
     id: 5,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18552/conversions/61kxIJbLDZL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/19196/conversions/GR_1623308481228_WhatsApp_Image_2021_06_10_at_11_57_34_AM_xlgn400x400-featured_img.jpg",
     name: "karma:Why Eerything You",
     save: "You save-114",
     offer: "32% Off",
@@ -52,7 +52,7 @@ export default [
   {
     id: 6,
     imgUrl:
-      "https://bazaarfly.com//storage/app/public/18536/conversions/51MB4Tc-cFL._AC_SL1500_-featured_img.jpg",
+      "https://bazaarfly.com//storage/app/public/19191/conversions/GR_1638954659502_WhatsApp_Image_2021_12_07_at_5_59_35_PM__2__xlgn400x400-featured_img.jpg",
     name: "The Book of Life ",
     save: "You save-114",
     offer: "32% Off",

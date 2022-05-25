@@ -105,7 +105,7 @@ const Navbar = () => {
               <div className="list_items">
                 <a href="/">{item}</a>
               </div>
-              <span>|</span>
+                <span>|</span>
             </li>
           ))}
         </div>

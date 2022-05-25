@@ -238,7 +238,7 @@ nav {
   .navigation_bottom_bar_items {
     list-style: none;
     .list_items {
-      padding: 5px;
+      padding: 3px;
       margin: 10px;
       background-color: var(--primary-color);
       border-radius: 10px;
@@ -256,8 +256,9 @@ nav {
       }
     }
     span {
-      z-index: 1;
-      color: var(--primary-border-color);
+      position: relative;
+      bottom: 35px;
+      color: rgb(198, 197, 197);
     }
   }
   @media screen and (max-width: 768px) {
