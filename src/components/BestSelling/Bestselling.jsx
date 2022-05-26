@@ -2,6 +2,7 @@ import React from "react";
 import "./BestSelling.scss";
 import Data from "./Data";
 import { BsCart } from "react-icons/bs";
+import MultiCarousel from "./MultiCarousel";
 const Bestselling = () => {
   return (
     <div>
@@ -12,10 +13,13 @@ const Bestselling = () => {
               Best Selling<span></span>
             </p>
             <p className="redBorder"></p>
+            <div className="top_20">
+              <span>Top 20</span>
+            </div>
           </div>
-
-          <div className="cards">
-            {/* {Data.map((item) => (
+          {/* <MultiCarousel /> */}
+          {/* <div className="cards">
+            {Data.map((item) => (
               <div className="product_card">
                 <div className="image">
                   <img src={item.imgUrl} alt="" />
@@ -35,8 +39,8 @@ const Bestselling = () => {
                   </div>
                 </div>
               </div>
-            ))} */}
-          </div>
+            ))}
+          </div> */}
         </div>
       </div>
     </div>

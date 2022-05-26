@@ -1,0 +1,138 @@
+.swiper {
+  width: 100%;
+  height: 24rem;
+  margin-top: 20px;
+  z-index: 10;
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; */
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  /* display: block; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* object-fit: cover; */
+  width: 14rem;
+  height: 220px;
+  border-radius: 12px 12px 0 0;
+  z-index: 10;
+}
+
+// .swiper {
+//   position: relative;
+//   width: 100%;
+//   height: 25rem;
+//   top: -1rem;
+//   z-index: -5;
+//   /* margin: 20px auto; */
+// }
+
+.product_card {
+  height: 225px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 10px;
+  &:hover .details {
+    box-shadow: 3px 17px 17px 1px rgba(0, 0, 0, 0.16);
+  }
+  img {
+    width: 14rem;
+    height: 210px;
+    border-radius: 12px 12px 0 0;
+  }
+  .details {
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
+    width: 14rem;
+    .offer {
+      .save {
+        background-color: #17a2b8;
+        padding: 3px;
+        color: #fff;
+        margin-right: 20px;
+        font-size: 12px;
+        border-radius: 5px;
+      }
+      span {
+        background-color: red;
+        padding: 3px;
+        color: #fff;
+        margin-right: 20px;
+        font-size: 12px;
+        border-radius: 5px;
+      }
+    }
+    .price {
+      p {
+        margin-top: 10px;
+        font-size: 18px;
+        color: red;
+      }
+      span {
+        font-size: 15px;
+      }
+      .pre_price {
+        span {
+          p {
+            display: block;
+            width: 3.5rem;
+            border-bottom: 1px solid #8e8d8f;
+            line-height: 0.1em;
+            margin-top: -13px;
+            margin-left: -5px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .swiper-button-next {
+//   // color: #8e8d8f !important;
+//   &:hover {
+//     color: #000 !important;
+//   }
+// }
+// .swiper-button-prev {
+//   // color: #8e8d8f !important;
+//   &:hover {
+//     color: #000 !important;
+//   }
+// }
+.swiper-button-prev::after {
+  font-size: 25px !important;
+}
+.swiper-button-next::after {
+  font-size: 25px !important;
+}
+.swiper-pagination-bullet {
+  display: none;
+}
+.swiper-pagination {
+  display: none;
+}
+.button-prev {
+  margin-right: 20px !important;
+}

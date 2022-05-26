@@ -30,10 +30,10 @@ export default [
     id: 4,
     imgUrl:
       "https://bazaarfly.com//storage/app/public/956/conversions/20210404_213525-featured_img.jpg",
-    save: "",
-    offer: "",
+    save: "You save-50",
+    offer: "14% Off",
     currentPrice: "Rs350.00",
-    prevPrice: "",
+    prevPrice: "Rs 30",
   },
   {
     id: 5,

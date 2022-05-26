@@ -1,6 +1,7 @@
 import React from "react";
 import "./Recommended.scss";
-import Data from "./Data";
+// import Data from "./Data";
+import Carousel from "./Carousel/Carousel";
 const Recommended = () => {
   return (
     <>
@@ -12,8 +13,8 @@ const Recommended = () => {
           <p className="redBorder"></p>
         </div>
 
-        <div className="cards">
-          {Data.map((item) => (
+        {/* <div className="cards"> */}
+        {/* {Data.map((item) => (
             <div className="product_card">
               <img src={item.imgUrl} alt={item.imgUrl} />
               <div className="details">
@@ -23,12 +24,21 @@ const Recommended = () => {
                 </div>
                 <div className="price">
                   <p>{item.currentPrice}</p>
-                  <span>{item.prevPrice}</span>
+                  <div className="pre_price">
+                    <span>
+                      {item.prevPrice}
+                      <p>
+                        <span></span>
+                      </p>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          ))} */}
+
+        {/* </div> */}
+        <Carousel />
       </div>
     </>
   );

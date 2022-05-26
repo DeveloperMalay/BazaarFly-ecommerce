@@ -5,8 +5,7 @@
   background: #fffce5;
   box-shadow: 0px 3px 15px 2px rgba(105, 103, 103, 0.75);
   margin-top: 2.5rem;
-  padding: 30px 30px;
-
+  padding: 20px 30px 0 30px;
   .header {
     font-weight: bold;
     font-size: 20px;
@@ -20,32 +19,6 @@
       width: 10rem;
       border-bottom: 3px solid red;
       z-index: 2;
-    }
-  }
-
-  .cards {
-    margin-top: 2rem;
-    display: flex;
-    cursor: pointer;
-    .product_card {
-      height: 225px;
-      object-fit: contain;
-      border-radius: 12px;
-      margin: 10px;
-      &:hover .details {
-        box-shadow: 3px 17px 17px 1px rgba(0, 0, 0, 0.16);
-      }
-      img {
-        width: 14rem;
-        height: 225px;
-        border-radius: 12px 12px 0 0;
-      }
-      .details {
-        background-color: #fff;
-        border-radius: 0 0 12px 12px;
-        transition: all 0.2s ease-in-out;
-        padding: 10px;
-      }
     }
   }
 }
