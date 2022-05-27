@@ -32,8 +32,8 @@
         z-index: 2;
       }
 
-      .top_20{
-        span{
+      .top_20 {
+        span {
           position: absolute;
           right: 9rem;
           bottom: 34.5rem;
@@ -45,21 +45,5 @@
         }
       }
     }
-    // .cards {
-    //   display: grid;
-    //   grid-template-columns: auto auto auto;
-    //   .product_card {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     height: 2rem;
-    //     width: 5rem;
-    //     .image {
-    //       width: 2rem;
-    //     }
-    //     .product_detail {
-    //     }
-    //   }
-    // }
   }
 }

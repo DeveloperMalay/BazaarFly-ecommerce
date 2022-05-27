@@ -33,7 +33,7 @@ export default [
     save: "You save-50",
     offer: "14% Off",
     currentPrice: "Rs350.00",
-    prevPrice: "Rs 30",
+    prevPrice: "Rs 300",
   },
   {
     id: 5,

@@ -1,41 +1,68 @@
 import React from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/grid";
-import "swiper/css/pagination";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import "./MultiCarousel.scss";
+import Data from "./Data";
+import { BsCart } from "react-icons/bs";
 
-// import required modules
-import { Grid, Pagination } from "swiper";
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 4, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 3,
+    slidesToSlide: 3, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 767, min: 464 },
+    items: 2,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
 
-export default function App() {
+const Slider = () => {
   return (
-    <>
-      <Swiper
-        slidesPerView={3}
-        grid={{
-          rows: 2,
-        }}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Grid, Pagination]}
-        className="mySwiper"
+    <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={false}
+        infinite={true}
+        partialVisible={false}
+        // dotListClass="custom-dot-list-style"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
-    </>
+        {Data.map((item) => {
+          return (
+            <div className="slider" key={item.id}>
+              <div className="image">
+                <img src={item.imgUrl} alt="" />
+              </div>
+              <div className="product_detail">
+                <p className="details">{item.details}</p>
+                <span className="current_price">{item.currentPrice}</span>
+                {/* <span className="prev_price">{item.prevPrice}</span> */}
+                <div className="flex_items">
+                  <div className="offer">
+                    <span>{item.save}</span>
+                    <p>{item.offer}</p>
+                  </div>
+                  <div className="cart_logo">
+                    <span>
+                      <BsCart />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </Carousel>
+    </div>
   );
-}
+};
+export default Slider;

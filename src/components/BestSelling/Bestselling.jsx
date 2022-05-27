@@ -1,7 +1,7 @@
 import React from "react";
 import "./BestSelling.scss";
-import Data from "./Data";
-import { BsCart } from "react-icons/bs";
+// import Data from "./Data";
+// import { BsCart } from "react-icons/bs";
 import MultiCarousel from "./MultiCarousel";
 const Bestselling = () => {
   return (
@@ -17,7 +17,7 @@ const Bestselling = () => {
               <span>Top 20</span>
             </div>
           </div>
-          {/* <MultiCarousel /> */}
+          <MultiCarousel />
           {/* <div className="cards">
             {Data.map((item) => (
               <div className="product_card">
