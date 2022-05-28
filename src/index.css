@@ -1,11 +1,10 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-:root{
-  --primary-color:#fd7e14;
-  --primary-font: 'Poppins', sans-serif;
-  --primary-border-color:#b1b4b8;
-  --secondery-border-color:#757b81;
+@import "bootstrap/dist/css/bootstrap.min.css";
+:root {
+  --primary-color: #fd7e14;
+  --primary-font: "Poppins", sans-serif;
+  --primary-border-color: #b1b4b8;
+  --secondery-border-color: #757b81;
 }
-
 
 * {
   margin: 0;

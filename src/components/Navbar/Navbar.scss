@@ -224,9 +224,23 @@ nav {
         display: none;
       }
     }
+
+    @media screen and (max-width: 768px) {
+      // position: fixed;
+      // top: 0;
+    }
   }
   @media screen and (max-width: 768px) {
     height: 6rem;
+  }
+  .offcanvas-title {
+    background-color: red !important;
+    color: #fff !important;
+  }
+  .offcanvas-body{
+    button{
+      background-color: red;
+    }
   }
 }
 

@@ -3,11 +3,17 @@
   height: 24rem;
   margin-top: 20px;
   z-index: 10;
+  
 }
 
 .swiper-slide {
   font-size: 18px;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  }
 }
 
 .swiper-slide img {
@@ -16,7 +22,6 @@
   border-radius: 12px 12px 0 0;
   z-index: 10;
 }
-
 
 .product_card {
   height: 225px;
@@ -79,6 +84,7 @@
       }
     }
   }
+
 }
 
 // .swiper-button-next {

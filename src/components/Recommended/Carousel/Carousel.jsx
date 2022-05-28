@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import SwiperCore, { Virtual, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Carousel.scss";
@@ -27,10 +27,27 @@ export default function App() {
         pagination={true}
         navigation={true}
         virtual
-        
+        breakpoints={{
+          960: {
+            slidesPerView: 4,
+            spaceBetween: 8,
+          },
+          720: {
+            slidesPerView: 3,
+            spaceBetween: 6,
+          },
+          540: {
+            slidesPerView: 2,
+            spaceBetween: 4,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 2,
+          },
+        }}
       >
         {Data.map((slideContent, id) => (
-          <SwiperSlide key={id} >
+          <SwiperSlide key={id}>
             <div className="product_card">
               <img src={slideContent.imgUrl} alt={slideContent.imgUrl} />
               <div className="details">
@@ -54,6 +71,8 @@ export default function App() {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* for mobile devices */}
     </>
   );
 }

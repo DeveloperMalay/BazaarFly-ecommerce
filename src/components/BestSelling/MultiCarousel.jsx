@@ -17,8 +17,8 @@ const responsive = {
     slidesToSlide: 3, // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 767, min: 464 },
-    items: 2,
+    breakpoint: { max: 720, min: 540},
+    items:1,
     slidesToSlide: 1, // optional, default to 1.
   },
 };
@@ -34,6 +34,24 @@ const Slider = () => {
         showDots={false}
         infinite={true}
         partialVisible={false}
+        breakpoints={{
+          960: {
+            slidesPerView: 4,
+            spaceBetween: 8,
+          },
+          720: {
+            slidesPerView: 3,
+            spaceBetween: 6,
+          },
+          540: {
+            slidesPerView: 2,
+            spaceBetween: 4,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 2,
+          },
+        }}
         // dotListClass="custom-dot-list-style"
       >
         {Data.map((item) => {

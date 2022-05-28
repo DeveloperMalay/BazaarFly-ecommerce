@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import { AiOutlineMenu, AiOutlineHeart } from "react-icons/ai";
 import { BsCart2, BsSearch, BsArrowRepeat } from "react-icons/bs";
 import { images } from "../../constants/index";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 const Navbar = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <nav>
@@ -22,7 +27,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navigation_bar">
-          <span className="icon-menu">
+          <span className="icon-menu" onClick={handleShow}>
             <AiOutlineMenu />
           </span>
 
@@ -105,9 +110,18 @@ const Navbar = () => {
               <div className="list_items">
                 <a href="/">{item}</a>
               </div>
-                <span>|</span>
+              <span>|</span>
             </li>
           ))}
+        </div>
+
+        <div className="offcanvas_btn">
+          <Offcanvas show={show} onHide={handleClose}>
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title>Sign In | Sign Up</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>Home</Offcanvas.Body>
+          </Offcanvas>
         </div>
       </nav>
     </>

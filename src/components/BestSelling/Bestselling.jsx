@@ -1,7 +1,7 @@
 import React from "react";
 import "./BestSelling.scss";
-// import Data from "./Data";
-// import { BsCart } from "react-icons/bs";
+import Data from "./Data";
+import { BsCart } from "react-icons/bs";
 import MultiCarousel from "./MultiCarousel";
 const Bestselling = () => {
   return (
@@ -18,29 +18,99 @@ const Bestselling = () => {
             </div>
           </div>
           <MultiCarousel />
-          {/* <div className="cards">
-            {Data.map((item) => (
-              <div className="product_card">
-                <div className="image">
-                  <img src={item.imgUrl} alt="" />
+          <div className="card1">
+            <div className="product_card">
+              <div className="image">
+                <img
+                  src="https://bazaarfly.com//storage/app/public/8258/conversions/IMG-20210606-WA0019-featured_img.jpg"
+                  alt=""
+                />
+              </div>
+              <div className="product_detail">
+                <p className="details">Oriflame Love Nature Orange Face Wash</p>
+                <span className="current_price">Rs235.00</span>
+                <span className="prev_price"></span>
+                <div className="offer">
+                  <p></p>
+                  <span></span>
                 </div>
-                <div className="product_detail">
-                  <p className="details">{item.details}</p>
-                  <span className="current_price">{item.currentPrice}</span>
-                  <span className="prev_price">{item.prevPrice}</span>
-                  <div className="offer">
-                    <p>{item.save}</p>
-                    <span>{item.offer}</span>
-                  </div>
-                  <div className="cart_logo">
-                    <span>
-                      <BsCart />
-                    </span>
-                  </div>
+                <div className="cart_logo">
+                  <span>
+                    <BsCart />
+                  </span>
                 </div>
               </div>
-            ))}
-          </div> */}
+            </div>
+
+            <div className="product_card">
+              <div className="image">
+                <img
+                  src="https://bazaarfly.com//storage/app/public/5061/conversions/61FNy0b3SlL._SL1000_-featured_img.jpg"
+                  alt=""
+                />
+              </div>
+              <div className="product_detail">
+                <p className="details">Tata Sampann Turmeric Powder Masala</p>
+                <span className="current_price">Rs200.00</span>
+                <span className="prev_price"></span>
+                <div className="offer">
+                  <p></p>
+                  <span></span>
+                </div>
+                <div className="cart_logo">
+                  <span>
+                    <BsCart />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="product_card">
+              <div className="image">
+                <img
+                  src="https://bazaarfly.com//storage/app/public/8258/conversions/IMG-20210606-WA0019-featured_img.jpg"
+                  alt=""
+                />
+              </div>
+              <div className="product_detail">
+                <p className="details">Oriflame Love Nature Orange Face Wash</p>
+                <span className="current_price">Rs235.00</span>
+                <span className="prev_price"></span>
+                <div className="offer">
+                  <p></p>
+                  <span></span>
+                </div>
+                <div className="cart_logo">
+                  <span>
+                    <BsCart />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="product_card">
+              <div className="image">
+                <img
+                  src="https://bazaarfly.com//storage/app/public/5061/conversions/61FNy0b3SlL._SL1000_-featured_img.jpg"
+                  alt=""
+                />
+              </div>
+              <div className="product_detail">
+                <p className="details">Tata Sampann Turmeric Powder Masala</p>
+                <span className="current_price">Rs200.00</span>
+                <span className="prev_price"></span>
+                <div className="offer">
+                  <p></p>
+                  <span></span>
+                </div>
+                {/* <div className="cart_logo">
+                  <span>
+                    <BsCart />
+                  </span>
+                </div> */}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
