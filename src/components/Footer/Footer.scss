@@ -3,6 +3,7 @@
   padding: 30px;
   height: 10rem;
   width: 100%;
+  overflow: hidden;
   .btn {
     margin-left: -15px;
     span {
@@ -33,7 +34,7 @@
   }
   .share_link {
     position: relative;
-    left: 69rem;
+    left: 68rem;
     top: -6rem;
     span {
       cursor: pointer;
@@ -52,7 +53,7 @@
       display: inline-block;
     }
     @media screen and (max-width: 768px) {
-      left: 12rem;
+      left: 11rem;
       top: -5.5rem;
     }
   }
@@ -96,7 +97,8 @@
         margin: 10px;
         padding: 2px;
         border-radius: 5px;
-        font-size: 15px;
+        font-size: 14px;
+        width: auto;
       }
     }
     @media screen and (max-width: 768px) {

@@ -71,13 +71,6 @@ const Banner = () => {
               <span href="/">{item.name}</span>
             </li>
           ))}
-          {categories.map((item) => (
-            <li key={item} className="category_card">
-              <img src={item.img} alt="" />
-              <span href="/">{item.name}</span>
-            </li>
-          ))}
-
         </div>
         <div className="banner_section">
           <Carousel>

@@ -1,4 +1,5 @@
 .banner_container {
+  overflow: hidden;
   display: grid;
   grid-template-columns: 0.65fr 2fr;
   box-shadow: 0px 13px 13px -12px rgba(0, 0, 0, 0.55);
@@ -24,6 +25,7 @@
         border-radius: 10px;
         padding: 2px 2px;
         font-weight: bold;
+
         cursor: pointer;
         transition: all 0.2s ease-in-out;
         &:hover {
@@ -34,11 +36,13 @@
         display: none;
       }
     }
+
     .category_items {
       padding: 7px 10px;
-      width: 0.65fr;
+      width: 100%;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
+      list-style: none;
       img {
         width: 2.5rem;
         margin-right: 10px;
@@ -49,24 +53,6 @@
       }
       &:hover {
         background-color: #fff;
-      }
-    }
-    .category_card {
-      display: none;
-      // display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      background-color: #fff;
-      border: 1px solid rgb(158, 156, 156);
-      width: 8rem;
-      height: 7rem;
-      border-radius: 5px;
-      span {
-        font-size: 0.8rem;
-        font-weight: bold;
-        width: 8rem;
       }
     }
     @media screen and (max-width: 768px) {
@@ -119,9 +105,10 @@
     }
 
     .banner_section_bottom {
+      width: 100%;
       margin-top: 8rem;
       img {
-        width: 8rem;
+        width: 7.9rem;
         margin-left: 8px;
         margin-right: 6px;
         cursor: pointer;
